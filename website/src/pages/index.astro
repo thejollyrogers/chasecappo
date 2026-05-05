@@ -31,25 +31,51 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 
 <style>
   .hero {
-    padding: 120px 0 80px;
+    padding: 140px 0 80px;
     text-align: center;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
   }
 
   .hero h1 {
     font-size: clamp(3rem, 10vw, 6rem);
-    color: var(--accent);
+    background: linear-gradient(135deg, var(--accent-light), var(--accent), var(--accent-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     letter-spacing: 0.04em;
     margin-bottom: 16px;
   }
 
   .lede {
-    color: var(--text-muted);
+    color: var(--text-dim);
     font-size: 1.1rem;
+    letter-spacing: 0.02em;
   }
 
   .book {
-    padding: 0 0 120px;
+    padding: 0 0 140px;
     text-align: center;
+    position: relative;
+  }
+
+  .book::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--accent-dark);
+    margin: 0 auto 48px;
   }
 
   .book h2 {

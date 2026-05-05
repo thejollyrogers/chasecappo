@@ -1,11 +1,16 @@
 :root {
-  --bg: #0A1628;
-  --bg-deep: #060d1a;
-  --text: #ffffff;
-  --text-muted: #a8b2c1;
-  --text-dim: #6b7585;
-  --accent: #FF69B4;
-  --border: rgba(255, 255, 255, 0.08);
+  --bg: #0a0a0a;
+  --bg-deep: #080808;
+  --bg-surface: #111111;
+  --text: #f5f5f5;
+  --text-muted: #cccccc;
+  --text-dim: #888888;
+  --accent: #c9a84c;
+  --accent-light: #e2c074;
+  --accent-dark: #a07830;
+  --gray-surface: #2a2a2a;
+  --gray-mid: #444444;
+  --border: rgba(201, 168, 76, 0.12);
   --transition: 0.2s ease;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
   --font-impact: 'Bebas Neue', Impact, sans-serif;
@@ -49,22 +54,24 @@ h1, h2, h3, h4 {
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 28px;
   font-family: var(--font-impact);
   font-size: 0.95rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background: var(--accent);
-  color: #0A1628;
-  border: none;
+  background: transparent;
+  color: var(--accent-light);
+  border: 1px solid var(--accent);
   border-radius: 6px;
   cursor: pointer;
-  transition: transform var(--transition), opacity var(--transition);
+  transition: all var(--transition);
 }
 
 .btn:hover {
+  background: var(--accent);
+  color: #0a0a0a;
   transform: translateY(-1px);
-  opacity: 0.92;
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.25);
 }
 
 .btn-sm {
