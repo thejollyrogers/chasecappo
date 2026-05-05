@@ -1,0 +1,73 @@
+:root {
+  --bg: #0A1628;
+  --bg-deep: #060d1a;
+  --text: #ffffff;
+  --text-muted: #a8b2c1;
+  --text-dim: #6b7585;
+  --accent: #FFCC00;
+  --border: rgba(255, 255, 255, 0.08);
+  --transition: 0.2s ease;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-impact: 'Bebas Neue', Impact, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+main {
+  min-height: 60vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-impact);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-family: var(--font-impact);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--accent);
+  color: #0A1628;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}

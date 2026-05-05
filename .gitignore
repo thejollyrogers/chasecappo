@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+.astro/
+.vite/
+.cache/
+.env
+.dev.vars
+.wrangler/

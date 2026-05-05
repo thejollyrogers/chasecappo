@@ -1,0 +1,11 @@
+name = "chasecappo"
+compatibility_date = "2025-03-22"
+pages_build_output_dir = "./dist"
+
+[vars]
+ANALYTICS_SALT = "chasecappo-analytics-v1-change-in-prod"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chasecappo-db"
+database_id = "a043e3ec-28c8-4034-9946-c2ed657241de"

@@ -1,0 +1,50 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Admin — Chase Cappo" description="Admin dashboard.">
+  <section class="container admin">
+    <h1>Admin</h1>
+    <p>Placeholder admin dashboard. Wire up data views as features land.</p>
+
+    <div class="admin-grid">
+      <a href="/api/admin/signups" class="admin-card">Signups</a>
+      <a href="/api/admin/messages" class="admin-card">Messages</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .admin {
+    padding: 64px 0;
+  }
+  .admin h1 {
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .admin p {
+    color: var(--text-muted);
+    margin-bottom: 32px;
+  }
+  .admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .admin-card {
+    display: block;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: var(--font-impact);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background var(--transition);
+  }
+  .admin-card:hover {
+    background: rgba(255, 204, 0, 0.08);
+    color: var(--accent);
+  }
+</style>
