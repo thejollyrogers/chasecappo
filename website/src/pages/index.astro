@@ -12,6 +12,21 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
       <p class="lede">Coming soon.</p>
     </div>
   </section>
+
+  <section class="book">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <p class="book-copy">Interested in working together? Book a time that works for you.</p>
+      <a
+        href="https://calendar.app.google/XdKsqkaQyu6jxEcD6"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn"
+      >
+        Schedule a Meeting
+      </a>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -30,5 +45,22 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
   .lede {
     color: var(--text-muted);
     font-size: 1.1rem;
+  }
+
+  .book {
+    padding: 0 0 120px;
+    text-align: center;
+  }
+
+  .book h2 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .book-copy {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 28px;
   }
 </style>
